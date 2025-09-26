@@ -1,0 +1,87 @@
+/* No seu arquivo Hero.module.css */
+
+.heroContainer {
+  display: flex;
+  min-height: 100vh;
+  position: relative; /* Importante para o DarkVeil não sobrepor o conteúdo */
+  overflow: hidden;
+}
+
+.heroContent {
+ width: 100%;   
+ text-align: center;
+  z-index: 10;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 4rem;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.heroSubtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #c0c0c0;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.heroSubtitle span {
+  background: linear-gradient(90deg, #8A2BE2, #C71585);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroDescription {
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.heroActions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btnPrimary {
+  background-color: #fff;
+  color: #000;
+}
+.btnPrimary:hover {
+  background-color: #d0d0d0;
+}
+
+.btnSecondary {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btnSecondary:hover {
+  background-color: #fff;
+  color: #000;
+}

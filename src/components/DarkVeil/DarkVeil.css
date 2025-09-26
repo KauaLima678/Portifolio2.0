@@ -1,0 +1,9 @@
+.darkveil-canvas {
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  transform: rotate(180deg);
+  display: block;
+  position: relative;
+  z-index: -10;
+}

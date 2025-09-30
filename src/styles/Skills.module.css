@@ -1,0 +1,96 @@
+.skillsSection{
+      padding: 50px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+.sectionTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    
+    h1{
+    font-size: 3rem;
+    text-align: center;
+    }
+
+    span {
+      background: linear-gradient(to Right, #8f17ff 40%, #22d3ee);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p{
+        color: #dadada;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+  }
+
+  .skillsContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 40px;
+
+    .skillsCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 2rem 4rem;
+        background-color: #080808;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        border: 2px solid rgba(255, 255, 255, 0.212);
+        cursor: pointer;
+        transition: .5s ease;
+
+        &:hover{
+            box-shadow: 0 0 10px #ffffff2f;
+            transform: translateY(-10px);
+            transition: all 0.3s ease-in-out;
+            background-color: #0e0e0e;
+        }
+        h2{
+            font-size: 30px;
+        }
+
+        .skillArea{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+
+            .headerSkill{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                font-size: 18px;
+            }
+
+            .skillBarArea{
+                width: 100%;
+                height: 10px;
+                background-color: #02020275;
+                border-radius: 20px;
+
+                .skillBar{
+                    background: linear-gradient(to Right, #8f17ff 40%, #22d3ee);
+                    width: 10%;
+                    height: 10px;
+                    border-radius: 20px;
+                    
+                }
+            }
+        }
+    }
+  }

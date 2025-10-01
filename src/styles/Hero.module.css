@@ -1,9 +1,7 @@
-/* No seu arquivo Hero.module.css */
-
 .heroContainer {
   display: flex;
   min-height: 100vh;
-  position: relative; /* Importante para o DarkVeil não sobrepor o conteúdo */
+  position: relative; 
   overflow: hidden;
 }
 
@@ -47,7 +45,7 @@
 }
 
 .heroDescription {
-  font-size: 1.1rem;
+  font-size: 1.29rem;
   color: #a0a0a0;
   line-height: 1.6;
   margin-bottom: 32px;

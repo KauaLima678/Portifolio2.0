@@ -1,4 +1,5 @@
 import styles from "../styles/Skills.module.css";
+import background from "../images/background.png"
 
 export default function Skills() {
 
@@ -70,6 +71,10 @@ const skills = [
 
   return (
     <section id="Skills" className={styles.skillsSection}>
+      <div className={styles.bgCont}>
+      <img className={styles.bg} src={background} alt="" />
+      <div className={styles.blur}></div>
+      </div>
       <div className={styles.sectionTitle}>
         <h1>
           Minhas <span>Habilidades</span>

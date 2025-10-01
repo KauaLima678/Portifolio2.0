@@ -1,0 +1,119 @@
+.servicesSection{
+    padding: 100px 64px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    gap: 100px;
+
+   .sectionTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    
+    h1{
+    font-size: 3rem;
+    text-align: center;
+    }
+
+    span {
+      background: linear-gradient(to Right, #8f17ff 40%, #22d3ee);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p{
+        color: #dadada;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+  }
+}
+
+.servicesContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    place-items: center;
+
+    .cardService{
+        background-color: #000000;
+        padding: 40px 30px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.212);
+        transition: .5s ease;
+
+        &:hover{
+            .serviceTitle{
+                color: #8f17ff;
+            }
+
+            transform: scale(1.05);
+            box-shadow: 0 0 30px #ffffff2f;
+        }
+
+        .headerService{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .iconArea{
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            background: #4f00997a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .5s ease
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .serviceTitle{
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #fff;
+            transition: .5s ease;
+        }
+
+        .description{
+            color: #c0c0c0;
+            line-height: 1.5;
+            font-size: 1.1rem;
+        }
+
+        .list{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .services{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                p{
+                    font-size: 1.1rem;
+                }
+            }
+
+            .mark{
+                width: 10px;
+                height: 10px;
+                background:  #22d3ee;
+                border-radius: 50%;
+            }
+        }
+
+
+    }
+}

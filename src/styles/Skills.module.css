@@ -4,6 +4,34 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.bgCont{
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    .bg{
+        width: 500px;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+          .blur{
+    height: 0;
+    width: 30rem;
+    top: 80%;
+    right: 20%;
+    z-index: -100;
+    transform: translate(50%, -50%);
+    position: absolute;
+    box-shadow: 0 0 700px 15px white;
+    rotate: -30deg;
+}
 }
 
 .sectionTitle{

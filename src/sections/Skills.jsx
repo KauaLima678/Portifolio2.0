@@ -1,7 +1,20 @@
 import styles from "../styles/Skills.module.css";
 import background from "../images/background.png"
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 
 export default function Skills() {
+
+ useEffect(() => {
+    ScrollReveal().reveal('.skillsCardReveal', {
+      duration: 2000,
+      distance: '50px',
+      origin: 'bottom',
+      easing: 'ease',
+      interval: 300,
+      reset: true,
+    });
+  }, []);
 
 const skills = [
   {
@@ -41,8 +54,8 @@ const skills = [
   },
   {
     id: 6,
-    name: 'Express.js',
-    random: 40,
+    name: 'Php',
+    random: 50,
     type: 'back',
     color: "#acacacff"
   },
@@ -81,7 +94,7 @@ const skills = [
         </h1>
         <p>Tecnologias e ferramentas que domino para criar soluções completas e robustas</p>
       </div>
-      <div className={styles.skillsContainer}>
+      <div className={`${styles.skillsContainer} skillsCardReveal`}>
         <div className={styles.skillsCard}>
           <h2>FrontEnd</h2>
           {skills.map((skill) => ( skill.type === 'front' && 
@@ -91,7 +104,7 @@ const skills = [
                 <span className={styles.skillRandom}>{`${skill.random}%`}</span>
               </div>
               <div className={styles.skillBarArea}>
-                <div className={styles.skillBar} style={{width: `${skill.random}%`}}></div>
+                <div className={`${styles.skillBar} barReveal`} style={{width: `${skill.random}%`}}></div>
               </div>
           </div>
           ))}          

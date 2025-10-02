@@ -19,6 +19,7 @@
   flex-direction: column;
   justify-content: center;
   width: 70%;
+  animation: show 2s ease;
 }
 
 .heroTitle {
@@ -45,10 +46,10 @@
 }
 
 .heroDescription {
-  font-size: 1.29rem;
+  font-size: 1.21rem;
   color: #a0a0a0;
-  line-height: 1.6;
-  margin-bottom: 32px;
+  line-height: 1.11;
+  margin-bottom: 22px;
 }
 
 .heroActions {
@@ -82,4 +83,13 @@
 .btnSecondary:hover {
   background-color: #fff;
   color: #000;
+}
+
+@keyframes show{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }

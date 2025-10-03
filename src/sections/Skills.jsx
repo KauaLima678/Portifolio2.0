@@ -2,7 +2,14 @@ import styles from "../styles/Skills.module.css";
 import background from "../images/background.png"
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
-
+import { useInView } from "react-intersection-observer";
+import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoNodejs } from "react-icons/io5";
+import { SiPhp, SiPostgresql } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { LuFigma } from "react-icons/lu";
+import { VscVscode } from "react-icons/vsc";
+import { FaSquareJs } from "react-icons/fa6";
 export default function Skills() {
 
  useEffect(() => {
@@ -12,20 +19,22 @@ export default function Skills() {
       origin: 'bottom',
       easing: 'ease',
       interval: 300,
-      reset: true,
+      reset: false,
     });
   }, []);
 
 const skills = [
   {
     id: 1,
-    name: 'React.js',
+    icon: <RiReactjsLine /> ,
+    name: 'React.js',                                                    
     random: 60,
     type: "front",
     color: "#0077ffff"
   },
   {
     id: 2,
+    icon: <FaSquareJs />,
     name: 'JavaScript',
     random: 70,
     type: "front",
@@ -33,6 +42,7 @@ const skills = [
   },
   {
     id: 3,
+    icon: <RiTailwindCssFill />,
     name: 'Tailwind CSS',
     random: 20,
     type: "front",
@@ -40,6 +50,7 @@ const skills = [
   },
   {
     id: 4,
+    icon: <IoLogoNodejs />,
     name: 'Node.js',
     random: 40,
     type: 'back',
@@ -47,6 +58,7 @@ const skills = [
   },
   {
     id: 5,
+    icon: <SiPostgresql />,
     name: 'PostgreSQL',
     random: 30,
     type: 'back',
@@ -54,6 +66,7 @@ const skills = [
   },
   {
     id: 6,
+    icon: <SiPhp />,
     name: 'Php',
     random: 50,
     type: 'back',
@@ -61,6 +74,7 @@ const skills = [
   },
   {
     id: 7,
+    icon: <FaGitAlt />,
     name: 'Git',
     random: 90,
     type: 'tools',
@@ -68,6 +82,7 @@ const skills = [
   },
   {
     id: 8,
+    icon: <LuFigma />,
     name: 'Figma',
     random: 70,
     type: 'tools',
@@ -75,12 +90,18 @@ const skills = [
   },
   {
     id: 9,
+    icon: <VscVscode />,
     name: 'VS Code',
     random: 95,
     type: 'tools',
     color: "#0026ffff"
   }
 ]
+
+const {ref, inView} = useInView({
+  threshold: 0.2,
+  triggerOnce: true
+})
 
   return (
     <section id="Skills" className={styles.skillsSection}>
@@ -95,46 +116,55 @@ const skills = [
         <p>Tecnologias e ferramentas que domino para criar soluções completas e robustas</p>
       </div>
       <div className={`${styles.skillsContainer} skillsCardReveal`}>
-        <div className={styles.skillsCard}>
+        <div className={styles.skillsCard} ref={ref}>
           <h2>FrontEnd</h2>
           {skills.map((skill) => ( skill.type === 'front' && 
               <div className={styles.skillArea} key={skill.id}>
               <div className={styles.headerSkill}>
+                <div className={styles.nameSkill}>
+                <span className={styles.icon}  style={{color: `${skill.color}`}}>{skill.icon}</span>  
                 <span className={styles.skill} style={{color: `${skill.color}`}}>{skill.name}</span>
+                </div>
                 <span className={styles.skillRandom}>{`${skill.random}%`}</span>
               </div>
               <div className={styles.skillBarArea}>
-                <div className={`${styles.skillBar} barReveal`} style={{width: `${skill.random}%`}}></div>
+                <div className={`${styles.skillBar} barReveal`} style={{width: inView ? `${skill.random}%` : '0%' }}></div>
               </div>
           </div>
           ))}          
         </div>
-        <div className={styles.skillsCard}>
+        <div className={styles.skillsCard} ref={ref}>
           <h2>BackEnd</h2>
           {skills.map((skill) => ( skill.type === 'back' && 
               <div className={styles.skillArea} key={skill.id}>
               <div className={styles.headerSkill}>
+                <div className={styles.nameSkill}>
+                <span className={styles.icon}  style={{color: `${skill.color}`}}>{skill.icon}</span>  
                 <span className={styles.skill} style={{color: `${skill.color}`}}>{skill.name}</span>
+                </div>
                 <span className={styles.skillRandom}>{`${skill.random}%`}</span>
               </div>
               <div className={styles.skillBarArea}>
-                <div className={styles.skillBar} style={{width: `${skill.random}%`}}></div>
+                <div className={`${styles.skillBar} barReveal`} style={{width: inView ? `${skill.random}%` : '0%' }}></div>
               </div>
           </div>
           ))}
 
         </div>
-        <div className={styles.skillsCard}>
+        <div className={styles.skillsCard} ref={ref}>
           <h2>Ferramentas</h2>
 
           {skills.map((skill) => ( skill.type === 'tools' && 
               <div className={styles.skillArea} key={skill.id}>
               <div className={styles.headerSkill}>
+                <div className={styles.nameSkill}>
+                <span className={styles.icon}  style={{color: `${skill.color}`}}>{skill.icon}</span>  
                 <span className={styles.skill} style={{color: `${skill.color}`}}>{skill.name}</span>
+                </div>
                 <span className={styles.skillRandom}>{`${skill.random}%`}</span>
               </div>
               <div className={styles.skillBarArea}>
-                <div className={styles.skillBar} style={{width: `${skill.random}%`}}></div>
+                <div className={`${styles.skillBar} barReveal`} style={{width: inView ? `${skill.random}%` : '0%' }}></div>
               </div>
           </div>
           ))}

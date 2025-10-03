@@ -1,5 +1,7 @@
 import { Code, Database, Globe, Palette, Smartphone, Zap } from "lucide-react";
 import styles from "../styles/Services.module.css";
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 
 export default function Services() {
   const services = [
@@ -83,6 +85,19 @@ export default function Services() {
     },
   ];
 
+  useEffect(() => {
+    ScrollReveal().reveal('.cardServiceReveal', {
+      delay: 200,
+      origin: 'bottom',
+      interval: 500,
+      duration: 2000,
+      easing: 'ease',
+      reset: false,
+      distance: '100px'
+    }
+    )
+  }, [])
+
   return (
     <section id="Services" className={styles.servicesSection}>
       <div className={styles.sectionTitle}>
@@ -98,7 +113,7 @@ export default function Services() {
 
       <div className={styles.servicesContainer}>
         {services.map((service) => (
-          <div className={styles.cardService} key={service.id}>
+          <div className={`${styles.cardService} cardServiceReveal`} key={service.id}>
             <div className={styles.headerService}>
                 <div className={styles.iconArea}>
               <service.icon size={38} className={styles.icon} />

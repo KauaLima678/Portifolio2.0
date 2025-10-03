@@ -1,0 +1,57 @@
+.contactContainer{
+    padding: 50px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    
+    h1{
+    font-size: 3rem;
+    }
+
+    span {
+      background: linear-gradient(to Right, #8f17ff 40%, #22d3ee);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p{
+        color: #dadada;
+        font-size: 1.3rem;
+    }
+  }
+
+  .contactContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 50px;
+    height: 100%;
+
+    .colLeft{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .cardsCont{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .card{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+  }
+}

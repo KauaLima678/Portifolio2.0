@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
@@ -14,6 +15,7 @@ function App() {
       <Skills/>
       <Services />
       <Contact />
+      {/* <Footer /> */}
     </>
   );
 }

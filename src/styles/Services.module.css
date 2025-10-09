@@ -4,6 +4,7 @@
     flex-direction: column;
     display: flex;
     gap: 100px;
+    overflow: hidden;
 
    .sectionTitle{
     width: 100%;
@@ -35,7 +36,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
-    overflow: hidden;
     place-items: center;
 
     .cardService{
@@ -47,6 +47,7 @@
         gap: 40px;
         border: 1px solid rgba(255, 255, 255, 0.212);
         transition: .5s ease;
+        cursor: pointer;
 
         &:hover{
             .serviceTitle{
@@ -54,7 +55,7 @@
             }
 
             transform: scale(1.05);
-            box-shadow: 0 0 30px #ffffff2f;
+            box-shadow: 0 0 30px #ffffff30;
         }
 
         .headerService{
@@ -116,5 +117,56 @@
         }
 
 
+    }
+}
+
+.callMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .callMeContent{
+            padding: 50px;
+            border: 0.5px solid rgba(255, 255, 255, 0.212);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+    }
+
+    .textCall{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+
+        p{
+            font-size: 18px;
+            color: rgba(227, 227, 227, 0.536);
+        }
+    }
+
+    .btnCont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #8f17ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            width: 50%;
+            padding: 15px 0;
+            transition: .5s ease;
+
+            &:hover{
+                box-shadow: 0 0 30px #6301bf;
+            }
+        }
     }
 }

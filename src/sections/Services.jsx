@@ -138,6 +138,17 @@ export default function Services() {
           </div>
         ))}
       </div>
+      <div className={styles.callMe}>
+        <div className={styles.callMeContent}>
+            <div className={styles.textCall}>
+          <h1>Pronto para começar seu projeto?</h1>
+          <p>Vamos conversar sobre como posso ajudar a transformar sua ideia em realidade</p>
+          </div>
+          <div className={styles.btnCont}>
+            <a href="#Contact" className={styles.btn}>Fale Comigo</a>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

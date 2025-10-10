@@ -1,5 +1,5 @@
 import styles from './style.module.css'
-import { FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMapPin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
@@ -9,10 +9,22 @@ export default function Footer() {
         <div className={styles.col1}>
             <h1>Kauã Lima</h1>
             <p>Desenvolvedor Full Stack apaixonado por criar experiências digitais únicas e inovadoras que conectam tecnologia e criatividade.</p>
+
+            <div className={styles.social}>
+                <div className={styles.icon}>
+                    <FaGithub/>
+                </div>
+                <div className={styles.icon}>
+                    <FaLinkedin/>
+                </div>
+                <div className={styles.icon}>
+                    <FaWhatsapp/>
+                </div>
+            </div>
         </div>
 
         <div className={styles.col2}>
-            <h1>Links Úteis</h1>
+            <h1>Links Rápidos</h1>
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">Sobre</a></li>
@@ -38,6 +50,7 @@ export default function Footer() {
 
                 
                 <li>
+                    <FaMapPin />
                     <a href="mailto:kauablima26@gmail.com">kauablima26@gmail.com</a>
                 </li>
             </ul>

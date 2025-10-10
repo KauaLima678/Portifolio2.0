@@ -92,6 +92,7 @@
         color: #9d9d9d90;
         line-height: 1.2rem;
         font-size: 20px;
+        font-weight: 400;
       }
     }
 
@@ -114,6 +115,18 @@
         border-radius: 10px;
         border-right: 5px solid #8f17ff;
         height: 100px;
+        transition: .5s ease;
+
+        &:hover{
+          background-color: #3d3d3d67;
+          transform: scale(1.01);
+
+          .cardText{
+            span{
+              color: #7638FA;
+            }
+          }
+        }
 
         .iconArea{
           background-color: #8f17ff59;
@@ -133,6 +146,10 @@
           flex-direction: column;
           gap: 10px;
           font-size: 20px;
+          
+          span{
+            transition: .5s ease;
+          }
 
           p{
             color: rgba(241, 241, 241, 0.477);
@@ -140,7 +157,7 @@
           }
         }
 
-          .whats{
+          /* .whats{
             padding: 5px;
             background-color: rgb(0, 255, 34);
             display: flex;
@@ -150,12 +167,12 @@
             position: absolute;
             right: 20px;
             top: 20px;
-          }
+          } */
     }
 
  
 
-  .whatsCard{
+  /* .whatsCard{
     display: flex;
     flex-direction: column;
     background-color: transparent;
@@ -163,7 +180,7 @@
     padding: 40px;
     height: 188px;
     border-radius: 10px;
-  }
+  } */
 
     .form{
       border: 1px solid rgba(255, 255, 255, 0.212);

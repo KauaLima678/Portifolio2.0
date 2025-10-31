@@ -2,6 +2,7 @@ import { Code, Database, Globe, Palette, Smartphone, Zap } from "lucide-react";
 import styles from "../styles/Services.module.css";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
+// import background from '../images/background.png'
 
 export default function Services() {
   const services = [
@@ -100,6 +101,10 @@ export default function Services() {
 
   return (
     <section id="Services" className={styles.servicesSection}>
+      {/* <div className={styles.bgCont}>
+      <img className={styles.bg} src={background} alt="" />
+      <div className={styles.blur}></div>
+      </div> */}
       <div className={styles.sectionTitle}>
         <h1>
           Meus <span>Serviços</span>

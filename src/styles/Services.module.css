@@ -5,6 +5,31 @@
     display: flex;
     gap: 100px;
     overflow: hidden;
+    .bgCont{
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    .bg{
+        width: 500px;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+          .blur{
+    height: 0;
+    width: 30rem;
+    top: 80%;
+    right: 20%;
+    z-index: -100;
+    transform: translate(50%, -50%);
+    position: absolute;
+    box-shadow: 0 0 700px 15px white;
+    rotate: -30deg;
+}
+}
 
    .sectionTitle{
     width: 100%;
@@ -126,6 +151,7 @@
     justify-content: center;
 
     .callMeContent{
+        box-shadow: 0 0 20px #ffffff30;
             padding: 50px;
             border: 0.5px solid rgba(255, 255, 255, 0.212);
             border-radius: 10px;
@@ -165,7 +191,7 @@
             transition: .5s ease;
 
             &:hover{
-                box-shadow: 0 0 30px #6301bf;
+                box-shadow: 0 0 20px #6301bf;
             }
         }
     }

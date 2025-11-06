@@ -1,12 +1,17 @@
 import styles from './style.module.css'
 import { FaGithub, FaLinkedin, FaMapPin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Logo from '../../images/Planet-gap.png'
+import { FaInstagram } from 'react-icons/fa6';
 
 export default function Footer() {
  return (
    <footer>
     <div className={styles.topContent}>
         <div className={styles.col1}>
+            <div className={styles.image}>
+                <img src={Logo} alt="" />
+            </div>
             <h1>Kauã Lima</h1>
             <p>Desenvolvedor Full Stack apaixonado por criar experiências digitais únicas e inovadoras que conectam tecnologia e criatividade.</p>
 
@@ -50,8 +55,8 @@ export default function Footer() {
 
                 
                 <li>
-                    <FaMapPin />
-                    <a href="mailto:kauablima26@gmail.com">kauablima26@gmail.com</a>
+                    <FaInstagram />
+                    <a href="#">@http_kauazinblx</a>
                 </li>
             </ul>
         </div>

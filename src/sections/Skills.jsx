@@ -70,7 +70,7 @@ const skills = [
     name: 'Php',
     random: 50,
     type: 'back',
-    color: "#acacacff"
+    color: "#d6c7ffff"
   },
   {
     id: 7,

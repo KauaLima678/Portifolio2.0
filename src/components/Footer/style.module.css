@@ -4,6 +4,7 @@ footer{
    gap: 10px;
    padding: 30px 64px;
    border-top: 0.5px solid #8f17ff58;
+   justify-content: center;
 }
 
 .topContent{
@@ -19,6 +20,14 @@ footer{
     flex-direction: column;
     gap: 20px;
 
+    .image{
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover
+        }
+    }
+
     .social{
         display: flex;
         align-items: center;
@@ -32,15 +41,14 @@ footer{
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    align-items: center;
 
-    ul{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    ul{        
+        display: flex;
+        flex-direction: column;
+        max-height: 100px;
+        flex-wrap: wrap;
         gap: 20px;
         width: 80%;
-        place-items: center;
-        text-align: start;
         li{
             list-style: none;
             
@@ -60,13 +68,19 @@ footer{
 
 .col3{
     display: flex;
-    align-items: center;
     flex-direction: column;
     gap: 10px;
 
     ul{
         display: flex;
         flex-direction: column;
+        color: #999999;
+        gap: 10px;
+        transition: .5s ease;
+
+        svg{
+            font-size: 20px;
+        }
 
         li{
             list-style: none;
@@ -74,10 +88,20 @@ footer{
             align-items: center;
             gap: 10px;
             font-size: 18px;
+
+            &:hover{
+                svg{
+            color: #fff;
+             }
+                a{
+                color: #fff;
+            }
+            }
             
             a{
-                color: #fff;
+                color: #999999;
                 text-decoration: none;
+                transition: .5s;
             }
         }
     }

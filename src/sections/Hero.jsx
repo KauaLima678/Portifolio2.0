@@ -2,6 +2,7 @@ import { SiGithub, SiNextdotjs, SiNodedotjs, SiPhp, SiPostgresql, SiReact, SiTai
 import DarkVeil from "../components/DarkVeil";
 import LogoLoop from "../components/LogoLoop/LogoLoop";
 import styles from "../styles/Hero.module.css";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 export default function Hero() {
   const techLogos = [
@@ -30,9 +31,20 @@ export default function Hero() {
           <a href="#projetos" className={`${styles.btn} ${styles.btnPrimary}`}>
             Meus Projetos
           </a>
-          <a href="#contato" className={`${styles.btn} ${styles.btnSecondary}`}>
+          <div className={styles.btnSocial}>
+            <a href="#contato" className={`${styles.btn} ${styles.btnSecondary}`}>
             Entrar em Contato
           </a>
+
+          <div className={styles.containerSocial}></div>
+          <div className={styles.socialIconsArea}>
+            <div className={styles.square}></div>
+            <a href=""><FaInstagram/></a>
+            <a href=""><FaLinkedin /></a>
+            <a href=""><FaGithub/></a>
+          </div>
+          </div>
+          
         </div>
       </div>
       <div

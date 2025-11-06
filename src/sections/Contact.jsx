@@ -1,6 +1,13 @@
 import { MdEmail } from "react-icons/md";
 import styles from "../styles/Contact.module.css";
-import { FaGithub, FaInstagram, FaLinkedin, FaPhone, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaPhone,
+  FaPhoneAlt,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { IoIosPin } from "react-icons/io";
 
 export default function Contact() {
@@ -20,10 +27,6 @@ export default function Contact() {
         <div className={styles.colLeft}>
           <div className={styles.infoContact}>
             <h1>Informações de Contato</h1>
-            <p>
-              Estou sempre aberto a discutir novos projetos, oportunidades
-              criativas ou simplesmente bater um papo sobre tecnologia.
-            </p>
           </div>
 
           <div className={styles.cardsCont}>
@@ -54,7 +57,17 @@ export default function Contact() {
                 <p>Jaboticabal - SP</p>
               </div>
             </a>
-           
+
+            <div className={styles.socialList}>
+              <a href="https://www.instagram.com/http_kauazinblx/" className={styles.ig}>
+                <FaInstagram />
+              </a>
+              <a href="www.linkedin.com/in/kauablima" className={styles.linkedin}><FaLinkedin /></a>
+              <a href="https://github.com/KauaLima678" className={styles.github}>
+                <FaGithub />
+              </a>
+              <a href="" className={styles.whatsapp}><FaWhatsapp/></a>
+            </div>
           </div>
         </div>
         <div className={styles.form}>

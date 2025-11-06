@@ -62,7 +62,7 @@
       .infoProjeto{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
 
         h2{
           font-size: 40px;
@@ -71,25 +71,54 @@
         .skillsProjeto{
           display: flex;
           align-items: center;
-          gap: 30px;
+          gap: 5px;
 
           .skill{
-            background-color: #8f17ff00;
-            border: 1px solid #8f17ff;
-            color: #fff;
-            font-weight: 500;
-            font-size: 14px;
-            padding: 5px 20px;
+            font-size: 30px;
+            padding: 0px 15px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 20px;
             cursor: pointer;
             transition: 0.3s ease-in-out;
+          }
+        }
+
+        .buttonArea{
+          display: flex;
+          gap: 50px;
+
+          a{
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+          }
+          
+          .demoButton{
+            padding: 10px 25px;
+            background: #8f17ff;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
 
             &:hover{
-              background: linear-gradient(to Right, #8f17ff 40%, #22d3ee);
-              border: none;
+              background: #8f17ffcc;
+            }
+          }
+
+          .moreButton{
+            padding: 10px 25px;
+            background: #22d3ee;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+
+            &:hover{
+              background: #22d3eecc;
             }
           }
         }

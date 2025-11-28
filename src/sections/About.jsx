@@ -77,8 +77,8 @@ export default function About() {
         <div className={styles.aboutContainer}>
         <div className={`${styles.colLeft} colLeftReveal`}>
             <div className={styles.text}>
-                <p>Sou um desenvolvedor apaixonado por tecnologia com mais ou menos 2 anos de experiência criando soluções web inovadoras. Minha jornada começou com curiosidade sobre como os sites funcionam e evoluiu para uma carreira dedicada a transformar ideias complexas em experiências digitais intuitivas e impactantes.</p>
-                <p>Atualmente busco especializar-me em desenvolvimento full stack, sempre buscando equilibrar funcionalidade, performance e design. Acredito que a tecnologia deve ser uma ponte entre problemas reais e soluções elegantes.</p>
+                <p>Sou um desenvolvedor apaixonado por tecnologia, com cerca de 2 anos de experiência criando soluções web modernas e eficientes. Iniciei minha trajetória curioso sobre como sites funcionam e transformei esse interesse em uma carreira dedicada a construir experiências digitais intuitivas e impactantes.</p>
+                <p>Atualmente, aprofundo-me no desenvolvimento full stack, sempre buscando equilíbrio entre funcionalidade, performance e design. Acredito que a tecnologia deve ser uma ponte entre problemas reais e soluções elegantes — e é isso que me guia em cada projeto.</p>
             </div>
             <div className={styles.cards1}>
                 <div className={styles.cardLeft}>

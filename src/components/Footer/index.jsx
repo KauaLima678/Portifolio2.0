@@ -9,23 +9,23 @@ export default function Footer() {
    <footer>
     <div className={styles.topContent}>
         <div className={styles.col1}>
-            <div className={styles.image}>
-                <img src={Logo} alt="" />
-            </div>
+            <div className={styles.title}>
+            <img src={Logo} alt="" />
             <h1>Kauã Lima</h1>
+            </div>
             <p>Desenvolvedor Full Stack apaixonado por criar experiências digitais únicas e inovadoras que conectam tecnologia e criatividade.</p>
 
-            <div className={styles.social}>
-                <div className={styles.icon}>
+            {/* <div className={styles.social}>
+                <a href='https://github.com/KauaLima678' className={`${styles.icon} ${styles.github}`}>
                     <FaGithub/>
-                </div>
-                <div className={styles.icon}>
+                </a>
+                <a href='www.linkedin.com/in/kauablima' className={`${styles.icon} ${styles.linkedin}`}>
                     <FaLinkedin/>
-                </div>
-                <div className={styles.icon}>
+                </a>
+                <a href='https://wa.link/g1fx6g' className={`${styles.icon} ${styles.whatsaap}`}>
                     <FaWhatsapp/>
-                </div>
-            </div>
+                </a>
+            </div> */}
         </div>
 
         <div className={styles.col2}>
@@ -52,15 +52,24 @@ export default function Footer() {
                     <FaWhatsapp />
                     <a href="tel:16997251263">(16) 99725-1263</a>
                 </li>
+            </ul>
+        </div>
 
-                
-                <li>
+        <div className={styles.col4}>
+            <h1>Redes Sociais</h1>
+            <ul>
+                <li><FaGithub/> <a href=''>KauaLima678</a></li>
+                <li><FaLinkedin/> <a href="">Kauã Lima</a></li>
+                  <li>
                     <FaInstagram />
                     <a href="#">@http_kauazinblx</a>
                 </li>
             </ul>
         </div>
 
+    </div>
+    <div className={styles.bottomContent}>
+        <p>&copy; Desenvolvido po Kauã Lima | Todos os direitos reservados - 2025</p>
     </div>
    </footer>
  );

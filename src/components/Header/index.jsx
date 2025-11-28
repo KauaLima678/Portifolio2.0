@@ -64,7 +64,7 @@ useEffect(() => {
           <a className={`${styles.navItem} ${activeSection === 'Hero' ? styles.activeLink : ''}`} href="#Hero">Home</a>
           <a  className={`${styles.navItem} ${activeSection === 'About' ? styles.activeLink : ''}`} href="#About">Sobre</a>
           <a  className={`${styles.navItem} ${activeSection === 'Skills' ? styles.activeLink : ''}`} href="#Skills">Skills</a>
-          <a  className={`${styles.navItem} ${activeSection === 'Services' ? styles.activeLink : ''}`} href="#Contato">Serviços</a>
+          <a  className={`${styles.navItem} ${activeSection === 'Services' ? styles.activeLink : ''}`} href="#Services">Serviços</a>
           <a  className={`${styles.navItem} ${activeSection === 'Projetos' ? styles.activeLink : ''}`} href="#Projetos">Projetos</a>
           <a  className={`${styles.navItem} ${activeSection === 'Contato' ? styles.activeLink : ''}`} href="#Contato">Contato</a>
         </nav>

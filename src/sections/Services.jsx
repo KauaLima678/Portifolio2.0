@@ -39,7 +39,7 @@ export default function Services() {
       description:
         "Desenvolvimento de APIs robustas e sistemas backend escaláveis e seguros.",
       features: [
-        "Node.js & Python",
+        "Node.js & Php",
         "Bancos de dados",
         "Arquitetura escalável",
         "Segurança avançada",
@@ -150,7 +150,7 @@ export default function Services() {
           <p>Vamos conversar sobre como posso ajudar a transformar sua ideia em realidade</p>
           </div>
           <div className={styles.btnCont}>
-            <a href="#Contact" className={styles.btn}>Fale Comigo</a>
+            <a href="#Contato" className={styles.btn}>Fale Comigo</a>
           </div>
         </div>
       </div>

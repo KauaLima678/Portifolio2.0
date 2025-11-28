@@ -28,7 +28,7 @@ const skills = [
     id: 1,
     icon: <RiReactjsLine /> ,
     name: 'React.js',                                                    
-    random: 60,
+    random: 70,
     type: "front",
     color: "#0077ffff"
   },
@@ -52,7 +52,7 @@ const skills = [
     id: 4,
     icon: <IoLogoNodejs />,
     name: 'Node.js',
-    random: 40,
+    random: 60,
     type: 'back',
     color: "#6bff4dff"
   },
@@ -60,7 +60,7 @@ const skills = [
     id: 5,
     icon: <SiPostgresql />,
     name: 'PostgreSQL',
-    random: 30,
+    random: 70,
     type: 'back',
     color: "#52a3ffff"
   },
@@ -68,7 +68,7 @@ const skills = [
     id: 6,
     icon: <SiPhp />,
     name: 'Php',
-    random: 50,
+    random: 80,
     type: 'back',
     color: "#d6c7ffff"
   },
@@ -84,7 +84,7 @@ const skills = [
     id: 8,
     icon: <LuFigma />,
     name: 'Figma',
-    random: 70,
+    random: 80,
     type: 'tools',
     color: "#b9a0ffff"
   },

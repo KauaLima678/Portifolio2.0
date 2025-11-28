@@ -24,27 +24,16 @@ export default function Hero() {
         </h1>
 
         <p className={styles.heroDescription}>
-         Sou movido pela curiosidade e pela satisfação de ver uma ideia ganhar vida no ambiente digital. Meu ponto de partida é sempre entender as pessoas por trás de cada projeto para criar soluções que sejam genuinamente úteis e agradáveis de usar. Acredito que os melhores resultados nascem da colaboração e do aprendizado contínuo. Em um mundo de tecnologia que evolui sem parar, meu compromisso é crescer junto, aplicando minha energia para construir produtos que não só funcionem hoje, mas que estejam prontos para os desafios de amanhã.
+         Sou movido pela curiosidade e pela vontade de transformar ideias em experiências digitais que realmente importam. Busco entender as pessoas por trás de cada projeto para criar soluções úteis, intuitivas e impactantes. Acredito na força da colaboração e do aprendizado constante, evoluindo junto com a tecnologia para entregar produtos preparados para os desafios de amanhã.
         </p>
 
         <div className={styles.heroActions}>
           <a href="#projetos" className={`${styles.btn} ${styles.btnPrimary}`}>
             Meus Projetos
           </a>
-          <div className={styles.btnSocial}>
             <a href="#contato" className={`${styles.btn} ${styles.btnSecondary}`}>
             Entrar em Contato
           </a>
-
-          <div className={styles.containerSocial}></div>
-          <div className={styles.socialIconsArea}>
-            <div className={styles.square}></div>
-            <a href=""><FaInstagram/></a>
-            <a href=""><FaLinkedin /></a>
-            <a href=""><FaGithub/></a>
-          </div>
-          </div>
-          
         </div>
       </div>
       <div

@@ -131,3 +131,57 @@
         }
       }
     }
+
+    .more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .moreContent{
+      width: 50%;
+        box-shadow: 0 0 20px #ffffff30;
+            padding: 50px;
+            border: 0.5px solid rgba(255, 255, 255, 0.212);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+    }
+
+    .textMore{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+
+        p{
+            font-size: 18px;
+            color: rgba(227, 227, 227, 0.536);
+        }
+    }
+
+    .buttonMore{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            background-color: #8f17ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            width: 50%;
+            padding: 15px 0;
+            transition: .5s ease;
+
+            &:hover{
+                box-shadow: 0 0 20px #6301bf;
+            }
+        }
+    }
+}

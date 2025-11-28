@@ -1,4 +1,6 @@
 import { MdEmail } from "react-icons/md";
+import { useState, useRef, useEffect } from "react";
+import emailjs from '@emailjs/browser'
 import styles from "../styles/Contact.module.css";
 import {
   FaGithub,
@@ -8,11 +10,44 @@ import {
   FaPhoneAlt,
   FaWhatsapp,
 } from "react-icons/fa";
-import { IoIosPin } from "react-icons/io";
+import { IoIosCloseCircle, IoIosPin } from "react-icons/io";
+import { type } from "@testing-library/user-event/dist/type";
+import { FaCircleCheck } from "react-icons/fa6";
+
+const SERVICE_ID = 'service_7lhmp5g';
+const TEMPLATE_ID = 'template_u13sf0p';
+const PUBLIC_KEY = 'g_H8VzXu9X0PWLl-s';
 
 export default function Contact() {
+  const form = useRef();
+
+  const [statusMessage, setStatusMessage] = useState(null);
+  const [isSending, setIsSending] = useState(false);
+
+  useEffect(() => {
+    emailjs.init({publicKey: PUBLIC_KEY});
+  },[])
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setIsSending(true);
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current).then((result) => {
+      console.log('Email enviado com sucesso', result.text);
+      setStatusMessage({type: 'sucess', text: 'Email enviado com sucesso'});
+      e.target.reset();
+    }, (error) => {
+      console.log("Falha ao enviar E-mail", error.text);
+      setStatusMessage({type: 'Error', text: 'ERRO: Falha ao enviar E-mail'})
+    }) .finally(() => {
+      setIsSending(false);
+      setTimeout(() => setStatusMessage(null), 5000);
+    })
+  }
+
   return (
-    <section className={styles.contactContainer}>
+    <section className={styles.contactContainer} id="Contato">
       <div className={styles.title}>
         <h1>
           Entre em <span>Contato</span>
@@ -27,6 +62,10 @@ export default function Contact() {
         <div className={styles.colLeft}>
           <div className={styles.infoContact}>
             <h1>Informações de Contato</h1>
+            <p>
+              Estou sempre aberto a discutir novos projetos, oportunidades
+              criativas ou simplesmente bater um papo sobre tecnologia.
+            </p>
           </div>
 
           <div className={styles.cardsCont}>
@@ -71,7 +110,7 @@ export default function Contact() {
           </div>
         </div>
         <div className={styles.form}>
-          <form action="submit">
+          <form action="" ref={form} onSubmit={sendEmail}>
             <h1>Envie uma Mensagem</h1>
 
             <div className={styles.inputArea}>
@@ -81,8 +120,9 @@ export default function Contact() {
                   <input
                     type="text"
                     id="name"
-                    name="nome"
+                    name="name"
                     placeholder="Digite seu nome completo"
+                    required
                   />
                 </div>
               </div>
@@ -95,6 +135,20 @@ export default function Contact() {
                     id="email"
                     name="email"
                     placeholder="Digite seu email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className={styles.inputContent}>
+                <label htmlFor="email">Assunto</label>
+                <div className={styles.input}>
+                  <input
+                    type="text"
+                    id="assunto"
+                    name="title"
+                    placeholder="Digite seu assunto"
+                    required
                   />
                 </div>
               </div>
@@ -104,16 +158,23 @@ export default function Contact() {
                 <div className={styles.textArea}>
                   <textarea
                     type="text"
-                    id="mensagem"
-                    name="mensagem"
+                    id="message"
+                    name="message"
                     placeholder="Digite sua mensagem"
+                    required
                   />
                 </div>
               </div>
             </div>
             <div className={styles.buttonArea}>
-              <button>Enviar Mensagem</button>
+              <button type="submit" disabled={isSending}>{isSending ? 'Enviando...' : 'Enviar Mensagem'}</button>
             </div>
+            {statusMessage && (
+              <div className={styles.notificationCard}>
+                {statusMessage.type === 'error' ? <IoIosCloseCircle color="red" /> : <FaCircleCheck color="green" />}
+                <p>{statusMessage.text}</p>
+              </div>
+            )}
           </form>
         </div>
       </div>

@@ -70,7 +70,7 @@ export default function Projetos() {
           id: 4,
           icon: <SiPrisma />,
           color: "#dcdcdcff",
-        }
+        },
       ],
       url: "https://github.com/KauaLima678/Estoque.git",
     },
@@ -152,6 +152,19 @@ export default function Projetos() {
             </div>
           </div>
         ))}
+      </div>
+      <div className={styles.more}>
+        <div className={styles.moreContent}>
+          <div className={styles.textMore}>
+            <h1>Se interessou?</h1>
+            <p>Veja mais dos meus projetos em meu Github!</p>
+          </div>
+          <div className={styles.buttonMore}>
+            <a href="https://github.com/KauaLima678?tab=repositories" className={styles.btn}>
+              <FaGithub /> Ver todos os projetos
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

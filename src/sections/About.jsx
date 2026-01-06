@@ -82,7 +82,7 @@ export default function About() {
             </div>
             <div className={styles.cards1}>
                 <div className={styles.cardLeft}>
-                    <h2>50+</h2>
+                    <h2>10+</h2>
                     <span>Projetos concluidos</span>
                 </div>
                 <div className={styles.cardLeft}>

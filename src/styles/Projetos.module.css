@@ -99,7 +99,7 @@
           }
           
           .demoButton{
-            padding: 10px 25px;
+            padding: 15px 25px;
             background: #8f17ff;
             border-radius: 8px;
             font-weight: 600;
@@ -111,7 +111,7 @@
           }
 
           .moreButton{
-            padding: 10px 25px;
+            padding: 15px 25px;
             background: #22d3ee;
             border-radius: 8px;
             font-weight: 600;
@@ -157,7 +157,7 @@
 
         p{
             font-size: 18px;
-            color: rgba(227, 227, 227, 0.536);
+            color: rgba(227, 227, 227, 0.858);
         }
     }
 
@@ -169,6 +169,7 @@
         .btn{
             display: flex;
             gap: 10px;
+            font-size: 17px;
             align-items: center;
             justify-content: center;
             background-color: #8f17ff;

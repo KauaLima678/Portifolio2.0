@@ -69,7 +69,7 @@ export default function Footer() {
 
     </div>
     <div className={styles.bottomContent}>
-        <p>&copy; Desenvolvido po Kauã Lima | Todos os direitos reservados - 2025</p>
+        <p>&copy; Desenvolvido po Kauã Lima | Todos os direitos reservados - 2026</p>
     </div>
    </footer>
  );

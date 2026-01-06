@@ -11,8 +11,7 @@ import {
 } from "react-icons/fa6";
 import { RiReactjsLine } from "react-icons/ri";
 import { IoLogoNodejs } from "react-icons/io5";
-import { SiMysql, SiPhp, SiPrisma } from "react-icons/si";
-import { Color } from "ogl";
+import { SiPhp, SiPrisma } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 
 export default function Projetos() {

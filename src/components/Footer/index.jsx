@@ -1,5 +1,5 @@
 import styles from './style.module.css'
-import { FaGithub, FaLinkedin, FaMapPin, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Logo from '../../images/Planet-gap.png'
 import { FaInstagram } from 'react-icons/fa6';
@@ -59,7 +59,7 @@ export default function Footer() {
             <h1>Redes Sociais</h1>
             <ul>
                 <li><FaGithub/> <a href='https://github.com/KauaLima678'>KauaLima678</a></li>
-                <li><FaLinkedin/> <a href="">Kauã Lima</a></li>
+                <li><FaLinkedin/> <a href="www.linkedin.com/in/kauablima">Kauã Lima</a></li>
                   <li>
                     <FaInstagram />
                     <a href="https://www.instagram.com/http_kauazinblx/">@http_kauazinblx</a>

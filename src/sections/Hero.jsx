@@ -1,8 +1,7 @@
-import { SiGithub, SiNextdotjs, SiNodedotjs, SiPhp, SiPostgresql, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiGithub, SiNodedotjs, SiPhp, SiPostgresql, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 import DarkVeil from "../components/DarkVeil";
 import LogoLoop from "../components/LogoLoop/LogoLoop";
 import styles from "../styles/Hero.module.css";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 export default function Hero() {
   const techLogos = [

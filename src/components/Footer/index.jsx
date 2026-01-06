@@ -58,11 +58,11 @@ export default function Footer() {
         <div className={styles.col4}>
             <h1>Redes Sociais</h1>
             <ul>
-                <li><FaGithub/> <a href=''>KauaLima678</a></li>
+                <li><FaGithub/> <a href='https://github.com/KauaLima678'>KauaLima678</a></li>
                 <li><FaLinkedin/> <a href="">Kauã Lima</a></li>
                   <li>
                     <FaInstagram />
-                    <a href="#">@http_kauazinblx</a>
+                    <a href="https://www.instagram.com/http_kauazinblx/">@http_kauazinblx</a>
                 </li>
             </ul>
         </div>

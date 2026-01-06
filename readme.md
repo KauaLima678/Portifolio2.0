@@ -1,77 +1,31 @@
-# React.js Template Básico
+## Olá! Sou Kauã Lima e este é meu portfólio.
 
-Este projeto serve como um template inicial para aplicações **React.js**. Ele foi criado para ajudar você a começar seu desenvolvimento sem precisar configurar toda a estrutura do zero.
+## 🧑‍💻 Sobre Mim
 
----
+Sou desenvolvedor front-end com foco em React.js e interfaces modernas. Sou formado em Técnico em Desenvolvimento de Sistemas pelo SESI/SENAI e recebi o prêmio de Aluno Destaque do curso.
 
-## 🎯 Recursos
+Este portfólio demonstra minha prática em componentização, organização de estilos com CSS Modules e criação de experiências interativas por meio de componentes como `LogoLoop` e `DarkVeil`.
 
-- **React.js Moderno:** Configurado com a versão mais recente do React.
-- **Estrutura Organizada:** Diretórios e arquivos estruturados para facilitar a escalabilidade.
-- **Configuração Flexível:** Base minimalista que pode ser personalizada conforme as necessidades do seu projeto.
-- **Suporte a ES6+:** Utilização de sintaxe moderna com Babel para transpilar seu código.
+Minhas principais habilidades mostradas neste projeto:
 
----
+- Componentes reutilizáveis em React (`Header`, `Footer` e seções como `About`, `Services`, `Skills`, `Projetos`).
+- Uso de CSS Modules e organização de estilos por seção.
+- Implementação de interatividade e animações leves para melhorar a experiência do usuário.
 
-## 🚀 Começando
+Busco oportunidades para desenvolver interfaces intuitivas, responsivas e acessíveis. Para contato, use a seção `Contact` da aplicação ou veja os arquivos neste repositório para entender minha abordagem e estrutura de código.
 
-### Pré-requisitos
+## 🧩 Funcionalidades do Portfólio
 
-- [Node.js](https://nodejs.org/en/) (versão 20 ou superior recomendada)
-- [npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
-
-### Instalação
-
-Siga os passos abaixo para configurar o projeto em sua máquina:
-
-1. **Clone o repositório:**
-
-   ```bash
-   git clone https://github.com/ma-nobrega/base-react.git
-   cd base-react
-   ```
-
-2. **Instale as dependências:**
-
-   ```bash
-   npm install
-   # ou, se preferir Yarn:
-   yarn install
-   ```
-
-3. **Inicie o servidor de desenvolvimento:**
-
-   ```bash
-   npm start
-   # ou:
-   yarn start
-   ```
-
-Após esses passos, a aplicação estará rodando em [http://localhost:3000](http://localhost:3000).
-
-## 📁 Estrutura do Projeto
-
-A estrutura básica do projeto é a seguinte:
-
-```
-base-react/
-├── public/
-│   └── index.html         # Arquivo HTML principal
-├── src/
-│   ├── components/        # Componentes reutilizáveis
-│   │   └── ComponenteExemplo/
-│   │      └── index.jsx
-│   ├── App.jsx             # Componente principal da aplicação
-│   ├── index.js           # Ponto de entrada da aplicação
-├── .gitignore             # Arquivos/pastas ignorados pelo Git
-├── package.json           # Configurações do projeto e dependências
-└── README.md              # Este arquivo de documentação
-```
+- **Navegação por Seções:** `Header` fornece links para as seções principais e facilita a navegação entre `Hero`, `About`, `Services`, `Skills`, `Projetos` e `Contact`.
+- **Hero:** Seção de destaque inicial com apresentação e chamadas principais; normalmente inclui a animação do `LogoLoop`.
+- **About:** Apresenta resumo profissional, formação e conquistas (como o prêmio de Aluno Destaque).
+- **Services:** Lista de serviços oferecidos com descrições curtas para cada um.
+- **Skills:** Exibição das habilidades técnicas e ferramentas que eu utilizo.
+- **Projetos:** Área com projetos desenvolvidos, contendo descrições, imagens e links quando disponíveis.
+- **Contact:** Informações ou formulário para contato, facilitando propostas e networking.
+- **Componentes Reutilizáveis:** `LogoLoop` (animação do logotipo), `DarkVeil` (efeito visual/sobreposição), `Header` (navegação) e `Footer` (informações de rodapé).
+- **Responsividade e Acessibilidade:** Layouts pensados para diferentes dispositivos e atenção a boas práticas de acessibilidade.
 
 ## 🤝 Contribuição
 
-Contribuições são muito bem-vindas! Se você deseja sugerir melhorias, corrigir algum bug ou adicionar novos recursos, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## 📄 Licença
-
-Este projeto está licenciado sob a MIT License.
+Contribuições são muito bem-vindas! Se você deseja sugerir melhorias, corrigir algum bug ou adicionar novos recursos, sinta-se a vontade para entrar em contato comigo.

@@ -21,7 +21,7 @@
 .aboutContainer {
   display: flex;
   flex-direction: row;
-  gap: 8rem;
+  gap: 4rem;
   justify-content: space-between;
   height: 100%;
 }
@@ -43,15 +43,18 @@
 
   .cards1 {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
-    gap: 50px;
+    gap: 20px;
+  }
+}
 
-    .cardLeft {
+.cardLeft {
       border: 1px solid #ffffff33;
       padding: 2rem 2rem;
       width: 100%;
       border-radius: 20px;
+      flex: 1;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -67,8 +70,6 @@
         color: #a3a3a3;
       }
     }
-  }
-}
 
 .colRight {
   width: 50%;

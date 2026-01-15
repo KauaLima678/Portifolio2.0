@@ -281,15 +281,51 @@
 }
 
 .notificationCard{
-  background-color: rgb(24, 24, 24);
+  background-color: #080808;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  gap: 20px;
   z-index: 1000;
-  padding: 10px 20px;
+  padding: 20px;
   border-radius: 8px;
   animation: fade .5s ease;
+
+  .borderMessage{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 5px;
+    animation: border 5s linear 1s ;
+  }
+
+  .message{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    p{
+      font-size: 16px;
+    }
+
+    .titleMessage{
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+
+  svg{
+    font-size: 34px;
+  }
+
 }
 
 @keyframes fade {
@@ -298,5 +334,14 @@
   }
   to{
     opacity: 1;
+  }
+}
+
+@keyframes border{
+  0%{
+    width: 100%;
+  }
+  100%{
+    width: 0%;
   }
 }

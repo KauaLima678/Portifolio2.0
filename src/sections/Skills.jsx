@@ -3,10 +3,10 @@ import background from "../images/background.png"
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
+import { RiReactjsLine} from "react-icons/ri";
 import { IoLogoNodejs } from "react-icons/io5";
 import { SiPhp, SiPostgresql } from "react-icons/si";
-import { FaGitAlt } from "react-icons/fa";
+import { FaCss3Alt, FaGitAlt } from "react-icons/fa";
 import { LuFigma } from "react-icons/lu";
 import { VscVscode } from "react-icons/vsc";
 import { FaSquareJs } from "react-icons/fa6";
@@ -42,9 +42,9 @@ const skills = [
   },
   {
     id: 3,
-    icon: <RiTailwindCssFill />,
-    name: 'Tailwind CSS',
-    random: 20,
+    icon: <FaCss3Alt />,
+    name: 'CSS3',
+    random: 90,
     type: "front",
     color: "#00c3ffff"
   },
@@ -57,20 +57,20 @@ const skills = [
     color: "#6bff4dff"
   },
   {
-    id: 5,
-    icon: <SiPostgresql />,
-    name: 'PostgreSQL',
-    random: 70,
-    type: 'back',
-    color: "#52a3ffff"
-  },
-  {
-    id: 6,
+       id: 5,
     icon: <SiPhp />,
     name: 'Php',
     random: 80,
     type: 'back',
     color: "#d6c7ffff"
+  },
+  {
+    id: 6,
+    icon: <SiPostgresql />,
+    name: 'PostgreSQL',
+    random: 70,
+    type: 'back',
+    color: "#52a3ffff"
   },
   {
     id: 7,

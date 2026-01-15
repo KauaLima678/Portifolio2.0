@@ -27,10 +27,10 @@ export default function Hero() {
         </p>
 
         <div className={styles.heroActions}>
-          <a href="#projetos" className={`${styles.btn} ${styles.btnPrimary}`}>
+          <a href="#Projetos" className={`${styles.btn} ${styles.btnPrimary}`}>
             Meus Projetos
           </a>
-            <a href="#contato" className={`${styles.btn} ${styles.btnSecondary}`}>
+            <a href="#Contato" className={`${styles.btn} ${styles.btnSecondary}`}>
             Entrar em Contato
           </a>
         </div>

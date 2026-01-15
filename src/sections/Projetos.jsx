@@ -152,7 +152,7 @@ export default function Projetos() {
           </div>
         ))}
       </div>
-      <div className={styles.more}>
+      {/* <div className={styles.more}>
         <div className={styles.moreContent}>
           <div className={styles.textMore}>
             <h1>Se interessou?</h1>
@@ -164,7 +164,7 @@ export default function Projetos() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

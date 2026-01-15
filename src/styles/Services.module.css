@@ -151,7 +151,8 @@
     justify-content: center;
 
     .callMeContent{
-        box-shadow: 0 0 20px #ffffff30;
+        /* box-shadow: 0 0 30px -10px #ffffff5c; */
+        background-color: #080808;
             padding: 50px;
             border: 0.5px solid rgba(255, 255, 255, 0.212);
             border-radius: 10px;

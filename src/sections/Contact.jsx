@@ -35,14 +35,14 @@ export default function Contact() {
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current).then((result) => {
       console.log('Email enviado com sucesso', result.text);
-      setStatusMessage({type: 'sucess', text: 'Email enviado com sucesso'});
+      setStatusMessage({type: 'sucess', text: 'Email enviado com sucesso !'});
       e.target.reset();
     }, (error) => {
       console.log("Falha ao enviar E-mail", error.text);
-      setStatusMessage({type: 'Error', text: 'ERRO: Falha ao enviar E-mail'})
+      setStatusMessage({type: 'error', text: 'Falha ao enviar E-mail.'})
     }) .finally(() => {
       setIsSending(false);
-      setTimeout(() => setStatusMessage(null), 5000);
+      setTimeout(() => setStatusMessage(null), 6000);
     })
   }
 
@@ -169,10 +169,14 @@ export default function Contact() {
             <div className={styles.buttonArea}>
               <button type="submit" disabled={isSending}>{isSending ? 'Enviando...' : 'Enviar Mensagem'}</button>
             </div>
-            {statusMessage && (
+            {statusMessage  &&(
               <div className={styles.notificationCard}>
-                {statusMessage.type === 'error' ? <IoIosCloseCircle color="red" /> : <FaCircleCheck color="green" />}
+                {statusMessage.type === 'error' ? <IoIosCloseCircle color="#eb0000" /> : <FaCircleCheck color="#00ff00" />}
+                <div className={styles.borderMessage} style={{backgroundColor: statusMessage.type === 'error' ? '#eb0000' : '#00ff00'}}></div>
+                <div className={styles.message}>
+                <span className={styles.titleMessage} style={{color: statusMessage.type === 'error' ? '#eb0000' : '#00ff00'}}>{statusMessage.type === 'error' ? 'Algo deu errado': 'Sucesso'}</span>
                 <p>{statusMessage.text}</p>
+                </div>
               </div>
             )}
           </form>
